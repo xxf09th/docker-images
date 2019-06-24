@@ -30,8 +30,8 @@ else
 fi
 
 
-echo "will download this image from: ${registry_address}${aliyun_image}"
-docker pull ${registry_address}${aliyun_image}:&{version}
-docker tag  ${registry_address}${aliyun_image}:&{version} ${image_local}
-docker rmi ${registry_address}${aliyun_image}:&{version}
+echo "will download this image from: ${registry_address}${aliyun_image}:${version}"
+docker pull ${registry_address}${aliyun_image}:${version}
+docker tag  ${registry_address}${aliyun_image}:${version} ${image_local}
+docker rmi ${registry_address}${aliyun_image}:${version}
 echo -e ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> download successfully!\n
