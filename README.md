@@ -2,7 +2,7 @@
 
 这个仓库是用来构建并下载被墙掉的镜像，比如 *gcr.io/xxx*等，
 
-最终产生的镜像路径是： registry.cn-hangzhou.aliyuncs.com/soolaugust/containers：$containers-$version, 比如 gcr.io/kubernetes-helm/tiller:v2.12.3 会被替换成 registry.cn-hangzhou.aliyuncs.com/soolaugust/containers:kubernetes-helm-tiller-v2.12.3
+最终产生的镜像路径是： registry.cn-hangzhou.aliyuncs.com/soolaugust/containers：$containers-$version, 比如 gcr.io/kubernetes-helm/tiller:v2.12.3 会被替换成 registry.cn-hangzhou.aliyuncs.com/soolaugust/containers:kubernetes-helm-tiller-v2.12.3. 其中， registry.cn-hangzhou.aliyuncs.com为registry地址， soolaugust为命名空间， 可以根据情况修改为自己的阿里云地址， 比如：registry.cn-beijing.aliyuncs.com/kubeflow-xxf
 
 * [下载代码](#download)
 * [检查镜像是否存在](#check)
